@@ -11,6 +11,8 @@ print("CADENAS Y CADENAS")
 print("-"*30)
 cad="Esta es una 'cadena con comillas simples' dentro de comillas dobles"
 print(cad)
+cad=cad+" Algo"
+print(cad)
 print(cad[0])
 # cad[0]='e'  #Error, las cadenas son inmutables
 lenguaje="Python"
@@ -39,24 +41,24 @@ print("FUNCIONES CON CADENAS")
 print("-"*30)
 nombres="Ana,Maria,Juan,Carlos,Luis"
 elementos="a a a b b B c c c c c aa"
-print(nombres.upper())
-print(nombres.lower())
-print(nombres.capitalize())
-print(nombres.title())
-print(nombres.replace("a","x"))
-print(nombres.split(","))
-print(nombres.count("a"))
-print(elementos.count("a"))
-print(nombres.split(",")[0]) 
-print(nombres.split(",")[-1]) 
-print(nombres.split(",")[-2])
+print(nombres.upper()) #convierte una cadena a mayúscula
+print(nombres.lower()) #Convierte una cadena a minúscula
+print(nombres.capitalize()) #Convierte la primera letra en mayúscula
+print(nombres.title()) #Convierte en mayúscula cada letra de la cadena
+print(nombres.replace("a","x")) #Remplaza una letra a por la letra x
+print(nombres.split(",")) #Divide la cadena hasta que encuentre la , o el caracter especificado
+print(nombres.count("a")) #Cuenta el número de a que existe en la cadena nombres
+print(elementos.count("a")) #Cuenta cuantas "a" hay en una cadena
+print(nombres.split(",")[0]) #Divide la cadena y extrae el elmento 0 de izq. a der.
+print(nombres.split(",")[-1]) #Divide la cadena y extrae el elemento -1 de derecha a izquierda
+print(nombres.split(",")[-2]) #DIvide la cadena y extrae el elemento '2
 #print(nombres.split(",")[-6])
-print(nombres.replace("Juan","Pedro"))
-print(nombres.replace(","," "))
-print(nombres.endswith("Luis"))
-print(nombres.startswith("Ana"))
-print(nombres.index("Carlos"))
-print(nombres.find("Juan"))
+print(nombres.replace("Juan","Pedro")) #Reemplaza la cadena Juna por Pedro
+print(nombres.replace(","," ")) #Reemplaza el caracter , por " "
+print(nombres.endswith("Luis")) #Pregunta si la cadena finaliza con LUis
+print(nombres.startswith("Ana")) #Pregunta si la cadena inicia con ANa
+print(nombres.index("Carlos"))#Cuenta la posición en donde empieza la palabra Carlos
+print(nombres.find("Juan")) #Busca y muestra en que posición empieza el nombre JUan
 
 print("-"*30)
 print("Cadenas multilínea")
@@ -67,5 +69,5 @@ texto_multilinea="""Este es un texto
 $$y se mantendrá el formato!!."""
 print(texto_multilinea)
 cadena_limpia=texto_multilinea.replace("[]","")\
-    .replace("**","").replace("$$","")
+    .replace("**","").replace("$$","") #Reemplaza un caracter por espacios en blanco
 print(cadena_limpia)
